@@ -1,0 +1,403 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+button{
+    appearance: none;
+    border:none;
+    padding:15px;
+}
+html{
+    font-size: 1em;
+}
+
+/* navigation */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 25px;
+    font-size: 1.2rem;
+    background-color: #270082;
+    color: white;
+}
+.title{
+    align-self: center;
+}
+.menu{
+    display:flex
+}
+.menu span:hover{
+    text-decoration: underline;
+}
+nav span{
+    padding:10px;    
+}
+
+/* sec-1 */
+/* .sec-1{
+
+
+} */
+.hero-img{
+    background-image:url(image/Proj_06_img/hero_image.png);
+    width:100%;
+    height:90vh;
+
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction:column;
+}
+.sec-1 h1+h4{
+    margin:12px;
+    text-align: center;
+}
+.sec-1 p{
+    font-size: 1.2rem;
+    margin:12px;
+    width:55%;
+    text-align: center;
+}
+.sec-1 h4{
+    font-size: 1.5rem;
+
+}
+.sec-1 h1{
+    font-size: 3.5rem;
+}
+/* ///////////////////////////////////// */
+.sec-2{
+    background-color: #281154;
+    color: white;
+    text-align: center;
+    height:600px;
+    /* max-height:min-content ; */
+}
+.sec-2 h1{
+    font-size: 2rem;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+}
+.mobile{
+    position:relative;
+    width:100%;
+    /* bottom:20px; */
+}
+.mobile img{
+    width:62%;
+}
+.sec-2 button{
+    font-size: 16px;
+    background:#DC0000;
+    color:white;
+    /* box-shadow: 9px 0px 9px yellow; */
+    transition: all 0.5s ease-in-out;
+}
+.sec-2 button:hover{
+    transform:scale(1.1);
+}
+
+.desc h1,
+.desc h3,
+.desc h4, 
+.desc p {
+    text-align:center;
+    max-width: 70%;
+} 
+/* ////////////////////////////// */
+/* .sec-3{
+
+} */
+.desc2{
+margin-top:40vw;
+width: 100%;
+padding:10px;
+
+display:flex;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+
+text-align: center;
+}
+.desc2 > p{
+    width:80%;
+    font-size: 1.3rem;
+}
+.desc2>img{
+    width:80%;
+    height: auto;
+}
+.desc2 > h3{
+    font-size: 1.8rem;
+}
+.desc2 > button{
+    background-color: #37008E;
+    color:white;
+    font-size: 1.1rem;
+}
+
+/* //////////////////////////////////// */
+.sec-4{
+    display: grid;
+    grid-template-rows:repeat(1 , 1fr);
+    grid-template-columns:repeat(1 , 1fr);
+    text-align: center;
+}
+.disco-video video{
+    width: 100%;
+    height:700px;
+    object-fit: cover;
+    object-position: center bottom;
+}
+.disco-video{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index:1;
+}
+.disco-text{
+    color:#fffefe;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index:2;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top:12%;
+    gap: 20px;
+}
+.sec-4 h3{
+    font-size: 2.5rem;
+    margin:20px ;
+}
+.sec-4 p{
+    width: 80%;
+    font-size: 1.8rem;
+}
+
+/* //////////////////////////////////////////////// */
+.sec-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+    gap:30px;
+}
+
+.gift-card-img{
+
+}
+.gift-card-desc{
+ max-width: 45%;
+ display: flex;
+ flex-direction: column;
+ gap: 25px;
+
+}
+.sec-5 img{
+    width: 100%;
+}
+.sec-5 button{
+    width: max-content;
+    background-color:#37008E;
+    color:white;
+    font-size: 1.1rem;
+}
+.sec-5 p{
+    max-width:700px;
+    font-size: 1.1rem;
+}
+.sec-5 h4{
+    font-size: 1rem;
+}
+/* //////////////////////////////// */
+.foot{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center ; */
+    text-align: center;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns:repeat(4,minmax(240px,1fr));
+    gap:10px;
+    padding:30px 11%;
+    background-color:#1B0058;
+    color: white;
+}
+.footer-menu h2{
+    font-size: 1.5rem;
+    padding-bottom:5px;
+    margin-bottom:10px;
+    border-bottom: 1px solid white;
+}
+.footer-menu div{
+    width:240px;
+}
+.footer-menu h2,
+.footer-menu p{ 
+    text-align: start;
+}
+.footer-menu p:hover{
+    text-decoration: underline;
+}
+
+.footer-menu p{
+    padding:5px;
+    font-size: 1rem;
+}
+.copyright{
+    background-color: #270082;
+    color: white;
+    padding:10px;
+}
+/* responsive touch */
+
+@media screen and (width>2000px){
+.sec-2{
+    height:700px;
+}
+.desc2{
+    margin-top:33vw;
+}
+}
+
+@media screen and (width<2000px){
+    .desc2{
+        margin-top:30vw;
+    }
+}
+/* @media screen and (width<1610px){
+.footer-menu{
+    padding:30px 10%;
+}
+}
+@media screen and (width<1410px){
+    .footer-menu{
+        padding:30px 7%;
+    }
+    }
+@media screen and (width<1310px){
+        .footer-menu{
+            padding:30px 4.9%;
+        }
+    } */
+
+@media screen and (width<1250px){
+    .sec-2{
+        height:475px;
+    }
+    .sec-5{
+        padding:75px 35px;
+    }
+    .desc2{
+    margin-top:35vw;
+    }
+    .footer-menu{
+        padding:30px 2%;
+    }
+    html{
+        font-size: .9em;
+    }
+    .footer-menu {
+        grid-template-columns:repeat(2,1fr);
+    }
+    }
+@media screen and (width<750px){
+        .sec-2 h4{
+            max-width:80%;
+        }
+        .sec-5{
+            flex-direction: column;
+          
+        }
+        .gift-card-desc{
+            max-width: 100%;
+        }
+    }
+@media screen and  (width<=550px){
+    nav{
+    flex-direction:column;
+    padding: 5px;
+    }
+    .footer-menu {
+        grid-template-columns:repeat(1,minmax(220px,1fr));
+    }
+    .menu{
+        margin-top: 8px;
+        justify-content: space-around;
+    }   
+    .menu span{
+        padding:10px;
+    }
+    .sec-1 p{
+        font-size:.9rem;
+        width: 90%;
+    }
+    .sec-2 h4{
+        max-width:90%;
+    }
+    /* .sec-2{ */
+        /* height:68%; */
+    /* }    */
+    .mobile img {
+        width: 75%;
+    }
+}
+@media screen and (width<450px){
+    .sec-2{
+        height:490px;
+    }
+    .mobile img {
+        width: 85%;
+    }
+    .desc2{
+        margin-top:44vw;
+    }
+    .sec-4 p{
+        font-size:1.2rem;
+    }
+    .sec-4 h3{
+        font-size:2rem;
+    }
+}
+@media screen and  (width<=390px){
+    nav .menu{
+        font-size:1.1rem;
+    }
+    .menu span{
+        padding: 0px;
+    }
+    .sec-2{
+        height:500px;
+    }
+    .sec-2 h4{
+        max-width:95%;
+        font-size: .9rem;
+    }
+    .desc2{
+        margin-top:35vw;
+    }
+}
+@media screen and (width<343px){
+    .sec-2{
+        height:545px;
+    }
+    .desc2{
+        margin-top:30vw;
+    }
+}
